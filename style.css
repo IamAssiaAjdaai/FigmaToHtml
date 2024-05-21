@@ -155,20 +155,29 @@ li span{
 }
 .card{
     text-align: left;
-    max-width: 200px;
-    width: 100%;
+    max-width: 300px;
+    width: 261px;
+    height: 259px;
     margin-top: 25px;
     margin-right: 250px;
     margin-bottom: 30px;
+    border-radius: 4px;
+    padding: 31px 0px 0px 41px;
 }
 .card img{
-    margin-left: 10px;
-    width: 150px;
+    margin-left: 63px;
+    width: 89.61px;
+    height: 100px;
+    padding: 0 0 0 0;
 }
 .card p{
     font-weight: 700;
-    font-size: 12px;
+    font-size: 16px;
+    text-align: center;
 }
 .card span{
     text-align: center;
+}
+.cardfirst{
+    background-color: #FFF5F3;
 }
