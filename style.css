@@ -40,9 +40,8 @@ a{
     font-weight: 800;
 }
 #txtbtn{
-    font-weight: 700;
-    padding: 0px 12px 12px 0px;
-    font-size: 10px;
+    font-weight: 700;    
+    font-size: 22px;
 }
 .navbar {
     display: flex;
@@ -109,6 +108,7 @@ i{
 h5{
     color:var(--btnColor);
     font-size: 21px;
+    margin-top: 110px;
 }
 .group img{
     margin-top: 30px;
@@ -166,7 +166,7 @@ li span{
     align-items: center;
     text-align: center;
     position: absolute;
-    left: 14%;
+    left: 18%;
 }
 .card {
     text-align: left;
@@ -230,7 +230,7 @@ li span{
     background-color: #ccfcff61;
     width: 100rem;
     height: 376px;
-    margin: -8px 0px 0 146px;
+    margin: 10px 0 18px 146px;
 }
 .footer{
     list-style: none;
