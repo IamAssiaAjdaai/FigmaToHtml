@@ -1,4 +1,4 @@
-//shift+alt+A for comment
+/* //shift+alt+A for comment
 /* function halloName(name,...args) {
      //name is Parameter we usr args when we have multiple argument and they are more than parametters
     let firstname = name;
@@ -26,7 +26,7 @@ console.log(persone.name)
 console.log(persone.Email)
 persone.login()
 persone.logout() */
-class User{
+/* class User{
     constructor(name, Email,date){
         this.name = name,
         this.Email = Email,
@@ -57,4 +57,42 @@ var userthree = new User("assia3","Assia3@gmail.com",today);
 var users=[userOen,usertwo,userthree]
 users.forEach(n => {
     console.log(n.name,n.Email,n.login(),n.logout(),today);
+});
+console.log(User.prototype); */
+//Timer
+/* setTimeout(() => {
+    document.getElementById("iconfooter").style.color = "#ff0000";
+}, 3000); 
+*/
+
+/* setInterval(() => {
+    document.getElementById("iconfooter").style.color = "#ff0000";
+}, 3000);
+ */
+/*setTimeout(() => {
+    
+}, timeout);
+
+clearInterval(); */
+//Async JavaScript
+// request and status reponse
+// Callback function 
+const getTodos = (callback) =>{
+    const request = new XMLHttpRequest();
+    request.addEventListener('readystatechange',()=>{
+        //console.log(request, request.readyState);
+        if(request.readyState === 4 && request.status === 200){
+            callback(undefined,request.responseText);
+        }
+        if(request.readyState === 4){
+            callback("could not fetch data",undefined);
+        }
+    })
+    request.open('GET','https://jsonplaceholder.typicode.com/todos/');
+    request.send();
+};
+
+getTodos((err, data)=>{
+    console.log("callback running");
+    console.log(err,data);
 });
